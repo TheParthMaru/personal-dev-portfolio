@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import { useEffect, useState } from 'react';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -40,6 +41,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   )
 }
